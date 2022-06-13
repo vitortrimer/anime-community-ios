@@ -11,14 +11,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let mainViewController = MainViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        window?.backgroundColor = .systemBlue
+        window?.backgroundColor = .black
+        window?.overrideUserInterfaceStyle = .dark
         
-        window?.rootViewController = MainViewController()
+        let mainVC = mainViewController
+        mainVC.statusBar()
+        
+        window?.rootViewController = mainVC
+        window?.makeKeyAndVisible()
+        
+        mainViewController.selectedIndex = 0
         
         return true
     }
