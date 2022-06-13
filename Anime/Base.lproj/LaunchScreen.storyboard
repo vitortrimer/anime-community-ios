@@ -16,9 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aR6-Px-bbS">
-                                <rect key="frame" x="32" y="-290.5" width="350" height="1477"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tv" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aR6-Px-bbS">
+                                <rect key="frame" x="97" y="338.5" width="220" height="219"/>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="iDd-dq-w9Q"/>
+                                    <constraint firstAttribute="width" constant="220" id="lZh-CV-TgV"/>
+                                </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                         </subviews>
@@ -26,8 +30,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aR6-Px-bbS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4uI-ah-dAb"/>
-                            <constraint firstItem="aR6-Px-bbS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="32" id="5oE-iW-mQs"/>
-                            <constraint firstAttribute="trailing" secondItem="aR6-Px-bbS" secondAttribute="trailing" constant="32" id="Feb-8B-MpY"/>
+                            <constraint firstItem="aR6-Px-bbS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VhT-oF-sI0"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,7 +40,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppLogo" width="1259" height="1477"/>
+        <image name="tv" catalog="system" width="128" height="97"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

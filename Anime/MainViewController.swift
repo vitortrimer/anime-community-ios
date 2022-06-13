@@ -61,14 +61,6 @@ extension MainViewController {
 
 // MARK: - Remove later
 
-class HomeViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .black
-    }
-}
-
-
 class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
